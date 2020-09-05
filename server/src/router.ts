@@ -9,7 +9,7 @@ export class Router {
         this.routes = [];
     }
 
-    add(method: string, url: string, handler: any) {
+    add(method: string, url: RegExp, handler: any) {
         this.routes.push({ method, url, handler })
     }
 
