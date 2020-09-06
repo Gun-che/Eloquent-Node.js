@@ -63,7 +63,7 @@ function renderComment(comment: any) {
     ': ', comment.message);
 }
 
-function renderTalkForm(dispatch) {
+export function renderTalkForm(dispatch) {
   let title = elt('input', { type: 'text' });
   let summary = elt('input', { type: 'text' });
 

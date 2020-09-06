@@ -13,6 +13,6 @@
     // "noEmit": true,
     "downlevelIteration": true
   },
-  "files": ["./index.ts"],
-  "include": ["src", "index.ts", "dist/keyListener.ts"]
+  "files": ["src/index.ts"],
+  "include": ["src", "src/index.ts", "dist/keyListener.ts"]
 }
