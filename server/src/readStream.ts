@@ -1,4 +1,4 @@
-export function readStream(stream) {
+module.exports = function readStream(stream) {
 
   return new Promise((resolve, reject) => {
     let data = '';

@@ -7,7 +7,7 @@ export const renderUesrField = (name: string, dispatch: any) => {
     onchange(e: InputEvent) {
       dispatch({
         type: 'setUser',
-        user: e.target.value
+        user: (e.target as HTMLInputElement).value
       })
     }
   }));
@@ -64,8 +64,8 @@ function renderComment(comment: any) {
 }
 
 export function renderTalkForm(dispatch) {
-  let title = elt('input', { type: 'text' });
-  let summary = elt('input', { type: 'text' });
+  let title = elt('input', { type: 'text' }) as HTMLInputElement;
+  let summary = elt('input', { type: 'text' }) as HTMLInputElement;
 
   return elt('form', {
     onsubmit(event: Event) {

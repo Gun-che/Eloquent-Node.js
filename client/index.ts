@@ -1,7 +1,7 @@
-import { reportError } from './fetchHelpers';
-import { pollTalks } from './pollTalks';
-import { SkillShareApp } from './SkillShareApp';
-import { handleAction } from './handleAction';
+import { reportError } from './src/fetchHelpers';
+import { pollTalks } from './src/pollTalks';
+import { SkillShareApp } from './src/SkillShareApp';
+import { handleAction } from './src/handleAction';
 
 function runApp() {
   let user = localStorage.getItem('newUser') || 'Anon';
